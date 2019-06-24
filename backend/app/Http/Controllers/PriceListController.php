@@ -9,7 +9,7 @@ class PriceListController extends Controller
 {
     public function index()
     {
-        return PriceList::with(['room', 'room_type', 'room_capacity'])->get();
+        return PriceList::pimp()->get();
     }
  
     public function show($id)

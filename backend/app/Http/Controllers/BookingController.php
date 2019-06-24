@@ -9,7 +9,7 @@ class BookingController extends Controller
 {
     public function index()
     {
-        return Booking::with(['room', 'customer'])->get();
+        return Booking::pimp()->get();
     }
  
     public function show($id)

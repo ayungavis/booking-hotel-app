@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        return User::all();
+        return User::pimp()->get();
     }
  
     public function show($id)

@@ -9,7 +9,7 @@ class HotelController extends Controller
 {
     public function index()
     {
-        return Hotel::all();
+        return Hotel::pimp()->get();
     }
  
     public function show($id)

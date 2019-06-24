@@ -3,11 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Jedrzej\Pimpable\PimpableTrait;
 
 class Customer extends Model
 {
+    use PimpableTrait;
+
     protected $table = 'customers';
     protected $primaryKey = 'id';
+
+    protected $sortParameterName = 'sortBy';
 
     protected $fillable = [
         'user_id',

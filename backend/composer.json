@@ -10,9 +10,11 @@
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
+        "jedrzej/pimpable": "0.0.4",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "tymon/jwt-auth": "0.5.*"
+        "tymon/jwt-auth": "0.5.*",
+        "jedrzej/pimpable": "0.0.4"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

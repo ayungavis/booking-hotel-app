@@ -3,11 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Jedrzej\Pimpable\PimpableTrait;
 
 class PriceList extends Model
 {
+    use PimpableTrait;
+
     protected $table = 'price_lists';
     protected $primaryKey = 'id';
+
+    protected $sortParameterName = 'sortBy';
 
     protected $fillable = [
         'room_id',

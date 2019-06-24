@@ -3,11 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Jedrzej\Pimpable\PimpableTrait;
 
 class Booking extends Model
 {
+    use PimpableTrait;
+
     protected $table = 'bookings';
     protected $primaryKey = 'id';
+    
+    protected $sortParameterName = 'sortBy';
 
     protected $fillable = [
         'room_id',

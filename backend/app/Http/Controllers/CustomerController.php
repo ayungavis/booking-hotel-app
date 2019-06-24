@@ -9,7 +9,7 @@ class CustomerController extends Controller
 {
     public function index()
     {
-        return Customer::with('user')->get();
+        return Customer::pimp()->get();
     }
  
     public function show($id)

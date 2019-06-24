@@ -9,7 +9,7 @@ class RoomController extends Controller
 {
     public function index()
     {
-        return Room::with(['hotel', 'room_type', 'room_capacity'])->get();
+        return Room::pimp()->get();
     }
  
     public function show($id)

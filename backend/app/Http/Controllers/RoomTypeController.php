@@ -9,7 +9,7 @@ class RoomTypeController extends Controller
 {
     public function index()
     {
-        return RoomType::all();
+        return RoomType::pimp()->get();
     }
  
     public function show($id)

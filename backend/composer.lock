@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f449da1ac99a4934710c2d8dd7be401b",
+    "content-hash": "4a7ae1f0f614b5b44dfca2023300b7f0",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -464,6 +464,233 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "jedrzej/pimpable",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jedrzej/pimpable.git",
+                "reference": "66915fa627e6056bdc2c92505d39589d398380a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jedrzej/pimpable/zipball/66915fa627e6056bdc2c92505d39589d398380a1",
+                "reference": "66915fa627e6056bdc2c92505d39589d398380a1",
+                "shasum": ""
+            },
+            "require": {
+                "jedrzej/searchable": "0.0.*",
+                "jedrzej/sortable": "0.0.*",
+                "jedrzej/withable": "0.0.*"
+            },
+            "require-dev": {
+                "codeception/codeception": "2.0.*",
+                "codeception/specify": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jedrzej\\": "src/Jedrzej/",
+                    "Illuminate\\": "vendor/laravel/framework/src/Illuminate/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jędrzej Kuryło",
+                    "email": "jedrzej.kurylo@gmail.com"
+                }
+            ],
+            "description": "Laravel 4/5 package that allows to dynamically filter, sort and eager load relations for your models using request parameters",
+            "homepage": "https://github.com/jedrzej/pimpable",
+            "keywords": [
+                "api",
+                "eager",
+                "eloquent",
+                "filter",
+                "laravel",
+                "load",
+                "model",
+                "request",
+                "search",
+                "searchable",
+                "sort",
+                "sortable"
+            ],
+            "time": "2015-12-21T20:48:23+00:00"
+        },
+        {
+            "name": "jedrzej/searchable",
+            "version": "0.0.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jedrzej/searchable.git",
+                "reference": "45ee7159f9c0956864bc64e38547d79e75649549"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jedrzej/searchable/zipball/45ee7159f9c0956864bc64e38547d79e75649549",
+                "reference": "45ee7159f9c0956864bc64e38547d79e75649549",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "*",
+                "illuminate/support": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "2.0.*",
+                "codeception/specify": "*"
+            },
+            "suggest": {
+                "jedrzej/sortable": "Allows sorting your models using request parameters",
+                "jedrzej/withable": "Allows eager loading of relations using request parameters"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jedrzej\\": "src/Jedrzej/",
+                    "Illuminate\\": "vendor/laravel/framework/src/Illuminate/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jędrzej Kuryło",
+                    "email": "jedrzej.kurylo@gmail.com"
+                }
+            ],
+            "description": "Searchable trait for Laravel's Eloquent models - filter your models using request parameters",
+            "homepage": "https://github.com/jedrzej/searchable",
+            "keywords": [
+                "api",
+                "eloquent",
+                "filter",
+                "laravel",
+                "model",
+                "request",
+                "search",
+                "searchable"
+            ],
+            "time": "2019-05-14T18:27:51+00:00"
+        },
+        {
+            "name": "jedrzej/sortable",
+            "version": "0.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jedrzej/sortable.git",
+                "reference": "ec50db7cef5b163e00e8ab3da245ff6a98346c7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jedrzej/sortable/zipball/ec50db7cef5b163e00e8ab3da245ff6a98346c7b",
+                "reference": "ec50db7cef5b163e00e8ab3da245ff6a98346c7b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "*",
+                "illuminate/support": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "2.0.*",
+                "codeception/specify": "*",
+                "mockery/mockery": "*"
+            },
+            "suggest": {
+                "jedrzej/searchable": "Allows filtering your models using request parameters",
+                "jedrzej/withable": "Allows eager loading of relations using request parameters"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jedrzej\\": "src/Jedrzej/",
+                    "Illuminate\\": "vendor/laravel/framework/src/Illuminate/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jędrzej Kuryło",
+                    "email": "jedrzej.kurylo@gmail.com"
+                }
+            ],
+            "description": "Sortable trait for Laravel's Eloquent models - sort your models using request parameters",
+            "homepage": "https://github.com/jedrzej/sortable",
+            "keywords": [
+                "api",
+                "eloquent",
+                "laravel",
+                "model",
+                "request",
+                "sort",
+                "sortable"
+            ],
+            "time": "2019-05-14T18:24:55+00:00"
+        },
+        {
+            "name": "jedrzej/withable",
+            "version": "0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jedrzej/withable.git",
+                "reference": "d9e336833b46f3d02d0ce10b0c21d1d2e19bf05a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jedrzej/withable/zipball/d9e336833b46f3d02d0ce10b0c21d1d2e19bf05a",
+                "reference": "d9e336833b46f3d02d0ce10b0c21d1d2e19bf05a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "*",
+                "illuminate/support": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "2.0.*",
+                "codeception/specify": "*"
+            },
+            "suggest": {
+                "jedrzej/searchable": "Allows filtering your models using request parameters",
+                "jedrzej/sortable": "Allows sorting your models using request parameters"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jedrzej\\": "src/Jedrzej/",
+                    "Illuminate\\": "vendor/laravel/framework/src/Illuminate/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jędrzej Kuryło",
+                    "email": "jedrzej.kurylo@gmail.com"
+                }
+            ],
+            "description": "Withable trait for Laravel's Eloquent models",
+            "homepage": "https://github.com/jedrzej/withable",
+            "keywords": [
+                "api",
+                "eager",
+                "eloquent",
+                "laravel",
+                "load",
+                "request"
+            ],
+            "time": "2017-10-29T00:31:31+00:00"
         },
         {
             "name": "kylekatarnls/update-helper",

@@ -9,7 +9,7 @@ class RoomCapacityController extends Controller
 {
     public function index()
     {
-        return RoomCapacity::all();
+        return RoomCapacity::pimp()->get();
     }
  
     public function show($id)
