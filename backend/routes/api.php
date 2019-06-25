@@ -23,12 +23,13 @@ use App\Booking;
 //     return auth()->user();
 // });
 
-Route::post('register', 'AuthController@register');
-Route::post('login', 'AuthController@login');
+Route::post('auth/register', 'AuthController@register');
+Route::post('auth/login', 'AuthController@login');
 
 Route::group(['middleware' => 'jwt.auth'], function() {
     // Authentication
-    Route::post('logout', 'AuthController@logout');
+    Route::get('auth/check', 'AuthController@check');
+    Route::post('auth/logout', 'AuthController@logout');
 
     // Booking
     Route::get('bookings', 'BookingController@index');
