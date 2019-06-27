@@ -31,6 +31,13 @@ Route::group(['middleware' => 'jwt.auth'], function() {
     Route::get('auth/check', 'AuthController@check');
     Route::post('auth/logout', 'AuthController@logout');
 
+    // User
+    Route::get('users', 'UserController@index');
+    Route::get('users/{id}', 'UserController@show');
+    Route::post('users', 'UserController@store');
+    Route::put('users/{id}', 'UserController@update');
+    Route::delete('users/{id}', 'UserController@delete');
+
     // Booking
     Route::get('bookings', 'BookingController@index');
     Route::get('bookings/{id}', 'BookingController@show');

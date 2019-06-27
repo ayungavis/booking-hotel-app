@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Response;
 use Validator;
 use JWTFactory;
 use JWTAuth;
@@ -25,14 +26,14 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
         try {
-            if (! $token = JWTAuth::attempt($credentials)) {
+            if (!$token = JWTAuth::attempt($credentials)) {
                 return response()->json(['error' => 'invalid_credentials'], 401);
             }
         } catch (JWTException $e) {
             return response()->json(['error' => 'could_not_create_token'], 500);
         }
 
-        return response()->json(compact('token'));
+        return response()->json(compact('credentials', 'token'));
     }
 
     public function register(Request $request)
@@ -46,22 +47,21 @@ class AuthController extends Controller
             return response()->json($validator->errors());
         }
 
-        User::create([
-            'name' => $request->get('name'),
+        $user = User::create([
             'email' => $request->get('email'),
             'password' => bcrypt($request->get('password')),
         ]);
         
-        $user = User::first();
+        // $user = User::first();
         $token = JWTAuth::fromUser($user);
         
-        return Response::json(compact('token'));
+        return Response::json(compact('user', 'token'));
     }
 
     public function check()
     {
         try {
-            if (! $user = JWTAuth::parseToken()->authenticate()) {
+            if (!$user = JWTAuth::parseToken()->authenticate()) {
                 return response()->json(['user_not_found'], 404);
             }
         } catch (Tymon\JWTAuth\Exceptions\TokenExpiredException $e) {
