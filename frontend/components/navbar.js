@@ -36,7 +36,17 @@ class Navbar extends Component {
 								>
 									<div style={{ width: "fit-content", margin: "auto 0px" }}>
 										<Link href='/dashboard'>
-											<a>Home</a>
+											<a>Dashboard</a>
+										</Link>
+									</div>
+									<div style={{ width: "fit-content", margin: "auto 0px" }}>
+										<Link href='/dashboard'>
+											<a>Rooms</a>
+										</Link>
+									</div>
+									<div style={{ width: "fit-content", margin: "auto 0px" }}>
+										<Link href='/dashboard'>
+											<a>Bookings</a>
 										</Link>
 									</div>
 									<div style={{ width: "fit-content", margin: "auto 0px" }}>
@@ -61,6 +71,11 @@ class Navbar extends Component {
 									<div style={{ width: "fit-content", margin: "auto 0px" }}>
 										<Link href='/login'>
 											<a>Login</a>
+										</Link>
+									</div>
+									<div style={{ width: "fit-content", margin: "auto 0px" }}>
+										<Link href='/register'>
+											<a>Register</a>
 										</Link>
 									</div>
 								</Col>

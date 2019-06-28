@@ -40,8 +40,8 @@ const auth = (state = initialState, action) => {
 		case "POST_LOGIN_FULFILLED":
 			return Object.assign({}, state, {
 				data: action.payload.data,
-				isLoading: true,
-				isLogin: false
+				isLoading: false,
+				isLogin: true
 			})
 
 		case "POST_REGISTER_PENDING":
@@ -59,8 +59,8 @@ const auth = (state = initialState, action) => {
 		case "POST_REGISTER_FULFILLED":
 			return Object.assign({}, state, {
 				data: action.payload.data,
-				isLoading: true,
-				isLogin: false
+				isLoading: false,
+				isLogin: true
 			})
 
 		default:

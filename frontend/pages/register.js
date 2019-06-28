@@ -7,11 +7,11 @@ import cookie from "js-cookie"
 
 import Navbar from "../components/navbar"
 import Navigation from "../components/navigation"
-import { postLogin } from "../redux/actions/auth"
+import { postRegister } from "../redux/actions/auth"
 
 import "../assets/less/style.less"
 
-class Login extends Component {
+class Register extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
@@ -30,7 +30,7 @@ class Login extends Component {
 			if (!err) {
 				this.props
 					.dispatch(
-						postLogin({
+						postRegister({
 							email: values.email,
 							password: values.password
 						})
@@ -58,7 +58,7 @@ class Login extends Component {
 						style={{ paddingTop: "30px", paddingBottom: "30px", minHeight: "500px" }}
 					>
 						<Content>
-							<Title>Login</Title>
+							<Title>Sign up</Title>
 							<br />
 							<div>
 								<Form onSubmit={this.handleSubmit} className='login-form'>
@@ -109,15 +109,6 @@ class Login extends Component {
 									</Form.Item>
 
 									<Form.Item>
-										<Row justify='end' type='flex'>
-											{/* getFieldDecorator("remember", {
-												valuePropName: "checked",
-												initialValue: true
-											})(<Checkbox>Remember me</Checkbox>) */}
-											<Link href=''>
-												<a className='login-form-forgot'>Forgot password</a>
-											</Link>
-										</Row>
 										<Row>
 											<Button
 												type='primary'
@@ -133,8 +124,8 @@ class Login extends Component {
 										<Row justify='center' type='flex'>
 											<div>
 												Or{" "}
-												<Link href='/register'>
-													<a>register now!</a>
+												<Link href='/login'>
+													<a>login now!</a>
 												</Link>
 											</div>
 										</Row>
@@ -155,6 +146,6 @@ const mapStateToProps = state => {
 	}
 }
 
-const WrappedLogin = Form.create()(Login)
+const WrappedRegister = Form.create()(Register)
 
-export default connect(mapStateToProps)(WrappedLogin)
+export default connect(mapStateToProps)(WrappedRegister)
