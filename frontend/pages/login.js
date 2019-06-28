@@ -1,15 +1,14 @@
 import React, { Component } from "react"
-import { Typography, Icon, Row, Col, Layout, Form, Input, Button, Checkbox } from "antd"
+import { Typography, Icon, Row, Col, Layout, Form, Input, Button } from "antd"
 import { connect } from "react-redux"
 import Link from "next/link"
 import Router from "next/router"
-import cookie from "js-cookie"
 
 import Navbar from "../components/navbar"
 import Navigation from "../components/navigation"
 import { postLogin } from "../redux/actions/auth"
-
-import "../assets/less/style.less"
+import { setCookie } from "../utils/cookie"
+import initialize from "../utils/initialize"
 
 class Login extends Component {
 	constructor(props) {
@@ -18,6 +17,10 @@ class Login extends Component {
 			loading: false,
 			iconLoading: false
 		}
+	}
+
+	static async getInitialProps(ctx) {
+		await initialize(ctx)
 	}
 
 	enterLoading = () => {
@@ -36,7 +39,7 @@ class Login extends Component {
 						})
 					)
 					.then(res => {
-						cookie.set("token", this.props.auth.data.token)
+						setCookie("token", this.props.auth.data.token)
 						Router.push("/")
 					})
 			}
