@@ -7,8 +7,8 @@ import reducers from "./reducers"
 
 const logger = createLogger({})
 
-const initStore = (initialState = {}) => {
-	return createStore(reducers, initialState, applyMiddleware(logger, thunk, promiseMiddleware))
+const initStore = () => {
+	return createStore(reducers, applyMiddleware(logger, thunk, promiseMiddleware))
 }
 
 export default initStore

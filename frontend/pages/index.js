@@ -1,11 +1,15 @@
 import React, { Component } from "react"
-import { Layout, Typography, Row, Col, Card } from "antd"
+import { Layout, Typography, Row, Col, Card, Table, Divider, Tag } from "antd"
 import { connect } from "react-redux"
+import cookie from "js-cookie"
 
 import Navbar from "../components/navbar"
 import Navigation from "../components/navigation"
-import { getStatus } from "../redux/actions/auth"
 import initialize from "../utils/initialize"
+import { getHotel } from "../redux/actions/hotel"
+import { getBooking } from "../redux/actions/booking"
+import { getRoom } from "../redux/actions/room"
+import { getRoomType } from "../redux/actions/roomType"
 
 import "../assets/less/style.less"
 
@@ -13,39 +17,41 @@ class Index extends Component {
 	constructor() {
 		super()
 		this.state = {
-			isLoggedIn: false
+			isLoggedIn: false,
+			token: cookie.get("token")
 		}
 	}
 
 	static async getInitialProps(ctx) {
 		await initialize(ctx)
-		/* if (req) {
-			const token = await req.headers.cookie
-			if (token) {
-				const action = await getStatus(token.split("=")[1])
-				return action.payload
-					.then(payload => {
-						return { user: payload.data }
-					})
-					.catch(err => {
-						res.writeHead(302, {
-							Location: "/login"
-						})
-						res.end()
-					})
-			} else {
-				res.writeHead(302, {
-					Location: "/login"
-				})
-				res.end()
-			}
-		} */
+	}
+
+	componentWillMount() {
+		this.getHotel()
+		this.getBooking()
+		this.getRoom()
+		this.getRoomType()
+	}
+
+	getHotel() {
+		this.props.dispatch(getHotel(this.state.token, ""))
+	}
+
+	getBooking() {
+		this.props.dispatch(getBooking(this.state.token, ""))
+	}
+
+	getRoom() {
+		this.props.dispatch(getRoom(this.state.token, ""))
+	}
+
+	getRoomType() {
+		this.props.dispatch(getRoomType(this.state.token, ""))
 	}
 
 	render() {
 		const { Content } = Layout
 		const { Title, Text } = Typography
-		console.log(this.props.user)
 		return (
 			<Layout>
 				<Navbar isLoggedIn={true} />
@@ -65,12 +71,12 @@ class Index extends Component {
 											<img
 												alt='image1'
 												style={{ width: "100%" }}
-												src='/static/images/burger1.jpg'
+												src='/static/images/hotel-1.jpg'
 											/>
 										}
 									>
 										<Card.Meta
-											title=''
+											title={`${this.props.hotel.data.length} Hotels`}
 											description='burger with patty and cheese'
 										/>
 									</Card>
@@ -82,12 +88,12 @@ class Index extends Component {
 											<img
 												alt='image2'
 												style={{ width: "100%" }}
-												src='/static/images/burger2.jpg'
+												src='/static/images/hotel-2.jpg'
 											/>
 										}
 									>
 										<Card.Meta
-											title='Menu 2'
+											title={`${this.props.room.data.length} Rooms`}
 											description='burger on white ceramic plate'
 										/>
 									</Card>
@@ -99,12 +105,12 @@ class Index extends Component {
 											<img
 												alt='image3'
 												style={{ width: "100%" }}
-												src='/static/images/burger3.jpg'
+												src='/static/images/hotel-3.jpg'
 											/>
 										}
 									>
 										<Card.Meta
-											title='Menu 3'
+											title={`${this.props.roomType.data.length} Room Types`}
 											description='burger with tomato and onion'
 										/>
 									</Card>
@@ -116,18 +122,28 @@ class Index extends Component {
 											<img
 												alt='image4'
 												style={{ width: "100%" }}
-												src='/static/images/burger4.jpg'
+												src='/static/images/hotel-4.jpg'
 											/>
 										}
 									>
 										<Card.Meta
-											title='Menu 4'
+											title={`${this.props.booking.data.length} Bookings`}
 											description='burger with vegetables'
 										/>
 									</Card>
 								</Col>
 							</Row>
 						</Content>
+
+						{/* <Row gutter={24} style={{ marginTop: "30px" }}>
+							<Col span={12} md={12}>
+								<Title level={3}>List of Hotels</Title>
+								<Card />
+							</Col>
+							<Col span={12} md={12}>
+								<Title level={3}>List of Bookings</Title>
+							</Col>
+						</Row> */}
 					</Col>
 				</Row>
 			</Layout>
@@ -138,11 +154,11 @@ class Index extends Component {
 const mapStateToProps = state => {
 	return {
 		auth: state.auth,
-		bookings: state.booking,
-		hotels: state.hotel,
-		priceLists: state.priceList,
+		booking: state.booking,
+		hotel: state.hotel,
+		priceList: state.priceList,
 		room: state.room,
-		roomTypes: state.roomType
+		roomType: state.roomType
 	}
 }
 

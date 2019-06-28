@@ -73,11 +73,6 @@ class Navbar extends Component {
 											<a>Login</a>
 										</Link>
 									</div>
-									<div style={{ width: "fit-content", margin: "auto 0px" }}>
-										<Link href='/register'>
-											<a>Register</a>
-										</Link>
-									</div>
 								</Col>
 							)}
 						</Row>

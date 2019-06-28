@@ -2,12 +2,12 @@ import axios from "axios"
 
 import server from "../../config/server"
 
-export const getHotel = token => {
+export const getHotel = (token, url) => {
 	return {
 		type: "GET_HOTEL",
 		payload: axios({
 			method: "get",
-			url: `${server.api}/hotels`,
+			url: `${server.api}/hotels${url}`,
 			headers: {
 				Authorization: `Bearer ${token}`
 			}
