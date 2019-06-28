@@ -1,21 +1,30 @@
 import Router from "next/router"
+import axios from "axios"
+import cookie from "js-cookie"
 
-import { getStatus } from "../redux/actions/auth"
-import { getCookie } from "../utils/cookie"
+import server from "../config/server"
 
 // checks if the page is being loaded on the server, and if so, get auth token from the cookie:
-export default function(ctx) {
-	if (ctx.isServer) {
-		if (ctx.req.headers.cookie) {
-			ctx.store.dispatch(getStatus(getCookie("token", ctx.req)))
-		}
+export default function() {
+	const token = cookie.get("token")
+	if (token) {
+		axios
+			.get(`${server.api}/auth/check`, {
+				headers: {
+					Authorization: `Bearer ${token}`
+				}
+			})
+			.then(res => {
+				if (res.data.error) {
+					Router.push("/login")
+				}
+				Router.push("/dashboard")
+			})
+			.catch(err => {
+				cookie.remove("token")
+				Router.push("/login")
+			})
 	} else {
-		const token = getCookie("token", ctx.req)
-
-		if (token && (ctx.pathname === "/login" || ctx.pathname === "/register")) {
-			setTimeout(function() {
-				Router.push("/")
-			}, 0)
-		}
+		Router.push("/login")
 	}
 }

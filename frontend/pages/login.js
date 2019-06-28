@@ -1,12 +1,13 @@
 import React, { Component } from "react"
-import { Breadcrumb, Icon, Row, Col, Layout, Form, Input, Button, Checkbox } from "antd"
+import { Typography, Icon, Row, Col, Layout, Form, Input, Button, Checkbox } from "antd"
 import { connect } from "react-redux"
 import Link from "next/link"
 import Router from "next/router"
+import cookie from "js-cookie"
 
-import { getStatus, postLogin } from "../redux/actions/auth"
-import { setCookie } from "../utils/cookie"
-import initialize from "../utils/initialize"
+import Navbar from "../components/navbar"
+import Navigation from "../components/navigation"
+import { postLogin } from "../redux/actions/auth"
 
 import "../assets/less/style.less"
 
@@ -14,14 +15,13 @@ class Login extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			email: "",
-			password: "",
-			token: ""
+			loading: false,
+			iconLoading: false
 		}
 	}
 
-	static getInitialProps(ctx) {
-		initialize(ctx)
+	enterLoading = () => {
+		this.setState({ loading: true })
 	}
 
 	handleSubmit = e => {
@@ -36,7 +36,7 @@ class Login extends Component {
 						})
 					)
 					.then(res => {
-						setCookie("token", this.props.auth.data.token)
+						cookie.set("token", this.props.auth.data.token)
 						Router.push("/")
 					})
 			}
@@ -44,62 +44,13 @@ class Login extends Component {
 	}
 
 	render() {
-		const { Header, Content } = Layout
+		const { Content } = Layout
+		const { Title, Text } = Typography
 		const { getFieldDecorator } = this.props.form
 		return (
 			<Layout>
-				<Header>
-					<Row justify='space-around' type='flex'>
-						<Col span={20}>
-							<Row justify='space-around' type='flex'>
-								<Col span={12} md={12} xs={24}>
-									<span>Booking Hotel</span>
-								</Col>
-								<Col
-									span={12}
-									md={12}
-									xs={0}
-									style={{
-										textAlign: "right",
-										height: 50,
-										display: "flex",
-										justifyContent: "flex-end",
-										textTransform: "uppercase"
-									}}
-								>
-									<div style={{ width: "fit-content", margin: "auto 0px" }}>
-										<Link href='/'>
-											<a>Home</a>
-										</Link>
-									</div>
-									<div style={{ width: "fit-content", margin: "auto 0px" }}>
-										<Link href='/'>
-											<a>Product</a>
-										</Link>
-									</div>
-									<div style={{ width: "fit-content", margin: "auto 0px" }}>
-										<Link href='/'>
-											<a>About us</a>
-										</Link>
-									</div>
-								</Col>
-							</Row>
-						</Col>
-					</Row>
-				</Header>
-				<Row justify='space-around' type='flex' style={{ marginTop: "20px" }}>
-					<Col span={20}>
-						<Breadcrumb>
-							<Breadcrumb.Item href=''>
-								<Icon type='home' />
-							</Breadcrumb.Item>
-							<Breadcrumb.Item href=''>
-								<Icon type='user' />
-								<span>Login</span>
-							</Breadcrumb.Item>
-						</Breadcrumb>
-					</Col>
-				</Row>
+				<Navbar isLoggedIn={false} />
+				<Navigation icon='user' text='Login' />
 				<Row justify='center' type='flex'>
 					<Col
 						md={12}
@@ -107,6 +58,8 @@ class Login extends Component {
 						style={{ paddingTop: "30px", paddingBottom: "30px", minHeight: "500px" }}
 					>
 						<Content>
+							<Title>Login</Title>
+							<br />
 							<div>
 								<Form onSubmit={this.handleSubmit} className='login-form'>
 									<Form.Item>
@@ -156,11 +109,11 @@ class Login extends Component {
 									</Form.Item>
 
 									<Form.Item>
-										<Row justify='space-between' type='flex'>
-											{getFieldDecorator("remember", {
+										<Row justify='end' type='flex'>
+											{/* getFieldDecorator("remember", {
 												valuePropName: "checked",
 												initialValue: true
-											})(<Checkbox>Remember me</Checkbox>)}
+											})(<Checkbox>Remember me</Checkbox>) */}
 											<Link href=''>
 												<a className='login-form-forgot'>Forgot password</a>
 											</Link>
@@ -170,6 +123,8 @@ class Login extends Component {
 												type='primary'
 												htmlType='submit'
 												className='login-form-button'
+												loading={this.state.loading}
+												onClick={this.enterLoading}
 												block
 											>
 												Log in
