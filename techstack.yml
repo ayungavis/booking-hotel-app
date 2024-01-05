@@ -1,0 +1,607 @@
+repo_name: ayungavis/booking-hotel-app
+report_id: 5f4d4de145b677ad81ab626a733d468b
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-05T08:34:16+00:00'
+requested_by: ayungavis
+provider: github
+branch: master
+detected_tools_count: 45
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app
+  detection_source: Repo Metadata
+- name: PHP
+  description: A popular general-purpose scripting language that is especially suited
+    to web development
+  website_url: http://www.php.net/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app
+  detection_source: Repo Metadata
+- name: Ant Design
+  description: A set of high-quality React components
+  website_url: https://ant.design
+  version: 3.19.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: JavaScript Framework Components
+  image_url: https://img.stackshare.io/service/6112/12101536.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: Bootstrap
+  description: Simple and flexible HTML, CSS, and JS for popular UI components and
+    interactions
+  website_url: http://getbootstrap.com/
+  version: 4.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/1101/C9QJ7V3X.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: Laravel
+  description: A PHP Framework For Web Artisans
+  website_url: http://laravel.com/
+  version: 0.11.3
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/992/AcA2LnWL_400x400.jpg
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: Less
+  description: The dynamic stylesheet language
+  website_url: http://lesscss.org/
+  version: 3.9.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1170/default_957cbc0168b4d37265e264469c888f776e57f42c.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: Next.js
+  description: 'A small framework for server-rendered universal JavaScript apps '
+  website_url: https://nextjs.org/
+  version: 8.1.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/5936/nextjs.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: Redux
+  description: Predictable state container for JavaScript apps
+  website_url: https://redux.js.org/
+  version: 4.0.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: State Management Library
+  image_url: https://img.stackshare.io/service/4074/13142323.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: Vue.js
+  description: A progressive framework for building user interfaces
+  website_url: http://vuejs.org/
+  version: 2.6.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript MVC Frameworks
+  image_url: https://img.stackshare.io/service/3837/paeckCWC.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: jQuery
+  description: The Write Less, Do More, JavaScript Library.
+  website_url: http://jquery.com/
+  version: 3.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: redux-thunk
+  description: Thunk middleware for Redux
+  website_url: https://github.com/gaearon/redux-thunk
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: State Management Library
+  image_url: https://img.stackshare.io/service/5448/13142323.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: Babel
+  description: Use next generation JavaScript, today.
+  website_url: http://babeljs.io/
+  version: 7.4.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JavaScript Compilers
+  image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: frontend/.babelrc
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app
+  detection_source: Repo Metadata
+- name: PHPUnit
+  description: Testing framework for PHP
+  website_url: https://phpunit.de/
+  version: 7.5.13
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/1616/1_WsEnddd5Y4EgEHsT054kUQ.jpeg
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/yarn.lock
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.11
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  version: 0.19.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: laravel-mix
+  description: A framework for web artisans.
+  website_url: https://laravel.com/docs/5.5/mix
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/7945/h7umz7fz_normal.jpg
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/package.json
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: "@babel/core"
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/@babel/core
+  version: 7.4.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15810/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: antd
+  description: An enterprise-class UI design language and React components implementation
+  package_url: https://www.npmjs.com/antd
+  version: 3.19.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16201/default_b4f5b6f31c5ab1ffee4bacf20842cd41a8f2658d.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: babel-plugin-import
+  description: Component modular import plugin for babel
+  package_url: https://www.npmjs.com/babel-plugin-import
+  version: 1.12.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16208/default_180418c6fa6cdb8f7a3500f84a8fedb884fcb3fa.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: cross-env
+  description: Run scripts that set and use environment variables across platforms
+  package_url: https://www.npmjs.com/cross-env
+  version: 5.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15828/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: js-cookie
+  description: A simple, lightweight JavaScript API for handling cookies
+  package_url: https://www.npmjs.com/js-cookie
+  version: 2.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16441/default_89ba91277e3434b03295bb11d22736632df1d04f.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: laravel-mix
+  description: Laravel Mix is an elegant wrapper around Webpack for the 80% use case
+  package_url: https://www.npmjs.com/laravel-mix
+  version: 4.0.16
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17350/default_33c3173e7d0e91f7cea0eab9883ca83b157bd4a5.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: popper.js
+  description: A kickass library to manage your poppers
+  package_url: https://www.npmjs.com/popper.js
+  version: 1.15.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16357/default_c47f6a56d74fae4d4404d77067b2fa35da6f1924.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: react-redux
+  description: Official React bindings for Redux
+  package_url: https://www.npmjs.com/react-redux
+  version: 7.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15984/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: redux-logger
+  description: Logger for Redux
+  package_url: https://www.npmjs.com/redux-logger
+  version: 3.0.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16512/default_0a704f5fac0bffcf529c9a61658d0b9ddbf7504e.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: resolve-url-loader
+  description: Webpack loader that resolves relative paths in url
+  package_url: https://www.npmjs.com/resolve-url-loader
+  version: 2.3.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16468/default_73c88a18b684e01cbdbf945631a40a44aff5a777.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: sass
+  description: A pure JavaScript implementation of Sass
+  package_url: https://www.npmjs.com/sass
+  version: 1.21.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16057/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: sass-loader
+  description: Sass loader for webpack
+  package_url: https://www.npmjs.com/sass-loader
+  version: 7.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15842/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: vue
+  description: Vue
+  package_url: https://www.npmjs.com/vue
+  version: 2.6.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15844/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/yarn.lock
+  detection_source: backend/package.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: barryvdh/laravel-cors
+  description: Adds CORS
+  package_url: https://packagist.org/barryvdh/laravel-cors
+  version: 0.11.3
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: beyondcode/laravel-dump-server
+  description: Symfony Var-Dump Server for Laravel
+  package_url: https://packagist.org/beyondcode/laravel-dump-server
+  version: 1.2.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: fideloper/proxy
+  description: Set trusted proxies for Laravel
+  package_url: https://packagist.org/fideloper/proxy
+  version: 4.1.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: filp/whoops
+  description: Php error handling for cool kids
+  package_url: https://packagist.org/filp/whoops
+  version: 2.4.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: fzaninotto/faker
+  description: Faker is a PHP library that generates fake data for you
+  package_url: https://packagist.org/fzaninotto/faker
+  version: 1.8.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: laravel/framework
+  description: The Laravel Framework
+  package_url: https://packagist.org/laravel/framework
+  version: 5.8.24
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: laravel/tinker
+  description: Powerful REPL for the Laravel framework
+  package_url: https://packagist.org/laravel/tinker
+  version: 1.0.8
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
+- name: mockery/mockery
+  description: Mockery is a simple yet flexible PHP mock object framework
+  package_url: https://packagist.org/mockery/mockery
+  version: 1.2.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: nunomaduro/collision
+  description: Cli error handling for console/command-line PHP applications
+  package_url: https://packagist.org/nunomaduro/collision
+  version: 3.0.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: phpunit/phpunit
+  description: The PHP Unit Testing framework
+  package_url: https://packagist.org/phpunit/phpunit
+  version: 7.5.13
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-23 15:34:34.000000000 Z
+- name: tymon/jwt-auth
+  description: JSON Web Token Authentication for Laravel and Lumen
+  package_url: https://packagist.org/tymon/jwt-auth
+  version: 0.5.12
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/ayungavis/booking-hotel-app/blob/master/backend/composer.lock
+  detection_source: backend/composer.json
+  last_updated_by: ayungavis
+  last_updated_on: 2019-06-27 19:46:36.000000000 Z
