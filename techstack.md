@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 ayungavis/booking-hotel-app is built on the following main stack:
+
 - [PHP](http://www.php.net/) – Languages
 - [Laravel](http://laravel.com/) – Frameworks (Full Stack)
 - [React](https://reactjs.org/) – Javascript UI Libraries
@@ -21,11 +22,13 @@ ayungavis/booking-hotel-app is built on the following main stack:
 - [Ant Design](https://ant.design) – JavaScript Framework Components
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 ayungavis/booking-hotel-app is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg' alt='PHP'/> [PHP](http://www.php.net/) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/992/AcA2LnWL_400x400.jpg' alt='Laravel'/> [Laravel](http://laravel.com/) – Frameworks (Full Stack)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1020/OYIaJ1KK.png' alt='React'/> [React](https://reactjs.org/) – Javascript UI Libraries
@@ -45,14 +48,15 @@ ayungavis/booking-hotel-app is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/6112/12101536.png' alt='Ant Design'/> [Ant Design](https://ant.design) – JavaScript Framework Components
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [ayungavis/booking-hotel-app](https://github.com/ayungavis/booking-hotel-app)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|44<br/>Tools used|11/24/23 <br/>Report generated|
+|45<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -239,9 +243,9 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (24)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (25)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (13)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (14)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
@@ -250,6 +254,7 @@ Full tech stack [here](/techstack.md)
 |[babel-plugin-import](https://www.npmjs.com/babel-plugin-import)|v1.12.0|06/27/19|ayungavis |MIT|N/A|
 |[cross-env](https://www.npmjs.com/cross-env)|v5.2.0|06/23/19|ayungavis |MIT|N/A|
 |[js-cookie](https://www.npmjs.com/js-cookie)|v2.2.0|06/27/19|ayungavis |MIT|N/A|
+|[laravel-mix](https://www.npmjs.com/laravel-mix)|v4.0.16|06/23/19|ayungavis |MIT|N/A|
 |[popper.js](https://www.npmjs.com/popper.js)|v1.15.0|06/23/19|ayungavis |MIT|N/A|
 |[react-dom](https://www.npmjs.com/react-dom)|v16.8.6|06/27/19|ayungavis |MIT|N/A|
 |[react-redux](https://www.npmjs.com/react-redux)|v7.1.0|06/27/19|ayungavis |MIT|N/A|
